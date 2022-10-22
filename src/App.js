@@ -2,19 +2,19 @@
 import { Box } from '@chakra-ui/react';
 import './App.css';
 import About from './components/About';
+import Home from './components/Home';
 import Navbar from './components/Navbar';
+import Project from './components/Projects';
 
 function App() {
   return (
     <>
-    <Box>
-      <Navbar/>
-     <h2>This is my portfoliio website</h2> 
-
-        </Box>
-        <Box mt="3rem">
+    <Box >
+      <Navbar />
+      <Home /> 
       <About />
-      </Box>
+      <Project />
+     </Box> 
       </>
   );
 }
