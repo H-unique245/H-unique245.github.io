@@ -2,6 +2,7 @@
 import { Box } from '@chakra-ui/react';
 import './App.css';
 import About from './components/About';
+import GitCalender from './components/GitCalender';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Project from './components/Projects';
@@ -14,6 +15,7 @@ function App() {
       <Home /> 
       <About />
       <Project />
+      <GitCalender/>
      </Box> 
       </>
   );
