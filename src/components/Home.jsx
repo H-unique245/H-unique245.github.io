@@ -9,9 +9,9 @@ import {
     useBreakpointValue,
   } from '@chakra-ui/react';
   
-  export default function Home() {
+  export default function Home({HomeRef}) {
     return (
-        <Box p={5}>
+        <Box p={5} ref={HomeRef}>
       <Stack  minH={'100vh'} direction={{ base: 'column', md: 'row' }}  >
         <Flex p={5} flex={2} align={'center'} justify={'center'} mt={"3rem"}>
           <Stack spacing={8} w={'full'} maxW={'xlg'} >
@@ -51,21 +51,19 @@ import {
                 _hover={{
                   bg: 'orange.500',
                 }}>
+                  {/* <i class="fa fa-download" aria-hidden="true"></i> */}
+                  {/* rel="external" target="_blank" */}
+                  <a href="../assets/pdf/Hemant_Aher_Resume.pdf" download   >
+          {/* Resume &nbsp; */}
+
                 RESUME
+                </a>
               </Button>
             </Stack>
           </Stack>
         </Flex>
-        <Flex flex={1} align="center" >
-          <Image
-            height="60%"
-            alt={'profile Image'}
-            rounded='full'
-            objectFit={'cover'}
-            src={
-              'https://avatars.githubusercontent.com/u/101566293?v=4'
-            }
-          />
+        <Flex flex={2} align="center" >
+        <Image src="https://miro.medium.com/max/720/0*gqO3slLmGb4mUeje.gif" alt="about"/>
         </Flex>
       </Stack>
       </Box>

@@ -1,0 +1,18 @@
+.skillCard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0px 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+  }
+  .skillImg {
+    width: 150px;
+    height: 150px;
+  }

@@ -12,7 +12,35 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
-const Links = ['Home','About','Skills', 'Projects', 'Contact', 'Resume'];
+// const Links = ['Home','About','Skills', 'Projects', 'Contact', 'Resume'];
+
+const Links = [
+  {
+    path: "/",
+    title: "Home"
+  },
+  {
+    path: "/about",
+    title: "About"
+  },
+  {
+    path: "/skills",
+    title: "Skills"
+  },
+  {
+    path: "/projects",
+    title: "Projects"
+  },
+  {
+      path: "/contact",
+      title: "Contact"
+  },
+  {
+      path: "https://drive.google.com/file/d/1GCKeDmhmjuyUQPq5OrAODrrttRduvCjm/view?usp=share_link",
+      title: "Resume"
+  }
+];
+
 
 const NavLink = ({ children }) => (
   <Link
@@ -25,7 +53,7 @@ const NavLink = ({ children }) => (
       color: 'black',
       bg: useColorModeValue('gray.200', 'gray.700'),
     }}
-    href={children}>
+    href={children==="Resume" ? "https://drive.google.com/file/d/1GCKeDmhmjuyUQPq5OrAODrrttRduvCjm/view?usp=share_link": children}>
     {children}
   </Link>
 );
@@ -51,7 +79,7 @@ export default function Navbar() {
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <NavLink key={link.path}>{link.title}</NavLink>
               ))}
             </HStack>
           </HStack>

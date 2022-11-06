@@ -8,13 +8,13 @@ import {
     Badge,
     useColorModeValue,
     Image,
+    Link,
   } from '@chakra-ui/react';
-  import {Link,useNavigate} from "react-router-dom";
+  // import {Link,useNavigate} from "react-router-dom";
    
   export default function ProjectCard({name,description,image,tech,project,deploylink, githublink}) {
-    const navigate= useNavigate()
     return (
-      <Center py={6}>
+      <Center py={6} px={3}>
         <Box
           maxW={'320px'}
           w={'full'}
@@ -27,6 +27,7 @@ import {
             fit={'cover'}
             align={'center'}
             w={'100%'}
+            h={'30vh'}
             src={
               image
             }
@@ -36,12 +37,13 @@ import {
           <Heading fontSize={'2xl'} fontFamily={'body'}>
             {name}
           </Heading>
-          <Text fontWeight={600} color={'gray.500'} mb={4}>
+          <Text fontWeight={600} color={'gray.500'}  mb={4}>
             @{project}
           </Text>
           <Text
             textAlign={'center'}
             color={useColorModeValue('gray.700', 'gray.400')}
+            h={'10rem'} 
             px={3}>
             {description}
           </Text>
@@ -61,7 +63,6 @@ import {
           <Stack mt={8} direction={'row'} spacing={4}>
             <Button
               flex={1}
-              onClick={()=>navigate(deploylink)}
               fontSize={'sm'}
               rounded={'full'}
               _focus={{
