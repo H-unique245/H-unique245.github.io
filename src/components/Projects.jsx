@@ -6,7 +6,7 @@ import ProjectCard from "./ProjectCard";
 
 // export default class Project extends Component {
 //     render() {
-export default function Project({ProjectRef}) {
+export default function Project() {
   var settings = {
     dots: true,
     infinite: false,
@@ -71,7 +71,9 @@ export default function Project({ProjectRef}) {
         }
     ]
     return (
-      <Box p={3} align="center" ref={ProjectRef}>
+      <section id="projects">
+
+      <Box p={3} align="center" >
         
         <Heading align="center" > Projects</Heading>
         <Slider {...settings}>
@@ -84,5 +86,6 @@ export default function Project({ProjectRef}) {
             }
         </Slider>
       </Box>
+      </section>
     );
   }

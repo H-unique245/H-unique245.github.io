@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import { Box } from '@chakra-ui/react';
 import './App.css';
-import { useRef } from 'react';
+// import { useRef } from 'react';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -12,21 +12,23 @@ import Project from './components/Projects';
 import Skills from './components/Skills';
 
 function App() {
-  const homeRef = useRef(null)
-  // const skillsRef = useRef(null)
-  const projectRef = useRef(null)
-  const contactRef = useRef(null)
-  const aboutRef = useRef(null)
+  // const homeRef = useRef(null)
+  // // const skillsRef = useRef(null)
+  // const projectRef = useRef(null)
+  // const contactRef = useRef(null)
+  // const aboutRef = useRef(null)
   return (
     <>
     <Box >
       <Navbar />
-      <Home HomeRef={homeRef} /> 
-      <About AboutRef={aboutRef}  />
-      <Project ProjectRef={projectRef}/>
+      <Home /> 
+      <About />
+      <Project />
       <Skills />
       <GitCalender/>
-      <Contact ContactRef={contactRef} />
+      <Contact
+      // ContactRef={contactRef} 
+      />
       <Footer />
      </Box> 
      

@@ -55,6 +55,9 @@ const Skills = () => {
     },
   ];
   return (
+    <section id="skills">
+
+
     <Box bgColor={"telegram.100"} p={3} m={2}>
       <Heading align="center">Skills</Heading>
       <Stack>
@@ -81,6 +84,7 @@ const Skills = () => {
         {/* </HStack> */}
       </Stack>
     </Box>
+    </section>
   );
 };
 export default Skills;

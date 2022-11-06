@@ -1,9 +1,10 @@
 import { Box, Heading, Stack, Image, Text } from "@chakra-ui/react";
 import React from "react";
 
-function About({AboutRef}) {
+function About() {
   return (
-    <Box bgColor={'purple.100'} p={4} ref={AboutRef} >
+    <section id="about">
+    <Box bgColor={'purple.100'} p={4} >
       <Heading align="center">About me</Heading>
       <Stack direction={{ base: 'column', md: 'row' }} alignItems="center" p={5} >
      <Box align="left" m={4} mr={0}> <Text  w={{base:"90%",md:"80%"}} lineHeight={7} fontSize={{ base: 'md', lg: 'lg' }}>
@@ -26,6 +27,7 @@ function About({AboutRef}) {
           />
       </Stack>
     </Box>
+    </section>
   );
 }
 

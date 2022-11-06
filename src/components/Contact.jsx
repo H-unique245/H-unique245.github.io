@@ -26,9 +26,11 @@ import {
   } from 'react-icons/md';
   import { BsGithub, BsLinkedin, BsPerson } from 'react-icons/bs';
   
-  export default function Contact({ContactRef}) {
+  export default function Contact(
+    ) {
     return (
-      <Container ref={ContactRef} bg="purple.800" maxW="full" m={2} mt={2}  centerContent overflow="hidden">
+      <section id="contact" >
+      <Container bg="purple.800" maxW="full" m={2} mt={2}  centerContent overflow="hidden">
         <Flex>
           <Box
             bg="#02054B"
@@ -162,5 +164,6 @@ import {
           </Box>
         </Flex>
       </Container>
+      </section>
     );
   }

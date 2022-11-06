@@ -20,19 +20,19 @@ const Links = [
     title: "Home"
   },
   {
-    path: "/about",
+    path: "#about",
     title: "About"
   },
   {
-    path: "/skills",
+    path: "#skills",
     title: "Skills"
   },
   {
-    path: "/projects",
+    path: "#projects",
     title: "Projects"
   },
   {
-      path: "/contact",
+      path: "#contact",
       title: "Contact"
   },
   {
@@ -53,8 +53,9 @@ const NavLink = ({ children }) => (
       color: 'black',
       bg: useColorModeValue('gray.200', 'gray.700'),
     }}
-    href={children==="Resume" ? "https://drive.google.com/file/d/1GCKeDmhmjuyUQPq5OrAODrrttRduvCjm/view?usp=share_link": children}>
-    {children}
+    // href={children.title==="Resume" ? "https://drive.google.com/file/d/1GCKeDmhmjuyUQPq5OrAODrrttRduvCjm/view?usp=share_link": children.path}>
+    href={children.path}>
+    {children.title}
   </Link>
 );
 
@@ -79,7 +80,7 @@ export default function Navbar() {
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
               {Links.map((link) => (
-                <NavLink key={link.path}>{link.title}</NavLink>
+                <NavLink key={link} to={link}>{link}</NavLink>
               ))}
             </HStack>
           </HStack>
