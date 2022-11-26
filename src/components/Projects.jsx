@@ -68,12 +68,21 @@ export default function Project() {
             project:"Individual Project",
             deploylink:"https://capable-gecko-6d7ee1.netlify.app/",
             githublink:'https://github.com/shubham0709/firefox'
-        }
+        },
+        {
+          name:"Kindmeal clone",
+          description:"Construct Week project of cloning Kindmeal.my. This project is build by tech stacks using React, javascript, HTML, CSS, Chakra UI, etc. ",
+          image: "./kindmeal.png",
+          tech: ["JavaScript", "React", "Chakra UI" ],
+          project:"Individual Project",
+          deploylink:"https://capable-gecko-6d7ee1.netlify.app/",
+          githublink:'https://github.com/shubham0709/firefox'
+      }
     ]
     return (
       <section id="projects">
 
-      <Box p={3} align="center" >
+      <Box p={3} align="center" bgColor='purple.300' >
         
         <Heading align="center" > Projects</Heading>
         <Slider {...settings}>

@@ -48,6 +48,9 @@ const NavLink = ({ children }) => (
     py={1}
     color="whitesmoke"
     rounded={'md'}
+    fontSize={'xl'}
+    fontFamily='Montserrat'
+    fontWeight='medium'
     _hover={{
       textDecoration: 'none',
       color: 'black',
@@ -65,7 +68,7 @@ export default function Navbar() {
   return (
     <>
       <Box bg={useColorModeValue('purple.400', 'purple.700')} px={4} pos="fixed"  w="100%" zIndex={2}>
-        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+        <Flex h={20} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -73,14 +76,14 @@ export default function Navbar() {
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
           />
-          <HStack spacing={8} alignItems={'center'}>
-            <Box rounded={'full'} border="3px solid orange" p={2} ><Image w={'4vh'} src='https://3.files.edl.io/bb16/22/02/18/154713-de5b1c4e-3d3f-44e0-95dc-bcb7627d37dc.png' slt='logo' /></Box>
+          <HStack spacing={10} alignItems={'center'}>
+            <Box rounded={'full'} border="3px solid orange" p={2} ><Image w={{base:'3vh',md:'2.5vh',lg:'4vh'}} src='https://3.files.edl.io/bb16/22/02/18/154713-de5b1c4e-3d3f-44e0-95dc-bcb7627d37dc.png' slt='logo' /></Box>
             <HStack
               as={'nav'}
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
               {Links.map((link) => (
-                <NavLink key={link} to={link}>{link}</NavLink>
+                <NavLink key={link.title} to={link}>{link}</NavLink>
               ))}
             </HStack>
           </HStack>
@@ -97,9 +100,9 @@ export default function Navbar() {
 
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
-            <Stack as={'nav'} spacing={4}>
+            <Stack as={'nav'} w="xs" spacing={4}>
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <NavLink key={link.title}>{link}</NavLink>
               ))}
             </Stack>
           </Box>

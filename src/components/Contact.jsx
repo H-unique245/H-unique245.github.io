@@ -16,21 +16,21 @@ import {
     InputGroup,
     InputLeftElement,
     Textarea,
+    Link,
   } from '@chakra-ui/react';
   import {
     MdPhone,
     MdEmail,
     MdLocationOn,
-    MdFacebook,
     MdOutlineEmail,
   } from 'react-icons/md';
-  import { BsGithub, BsLinkedin, BsPerson } from 'react-icons/bs';
+  import { BsGithub, BsLinkedin,BsTwitter, BsPerson } from 'react-icons/bs';
   
   export default function Contact(
     ) {
     return (
       <section id="contact" >
-      <Container bg="purple.800" maxW="full" m={2} mt={2}  centerContent overflow="hidden">
+      <Container bg="purple.800" maxW="full" p={2} centerContent overflow="hidden">
         <Flex>
           <Box
             bg="#02054B"
@@ -85,14 +85,16 @@ import {
                       spacing={5}
                       px={5}
                       alignItems="flex-start">
-                      <IconButton
-                        aria-label="facebook"
+                      <Link href='https://twitter.com/AherHemant1' isExternal><IconButton
+                        aria-label="twitter"
                         variant="ghost"
                         size="lg"
                         isRound={true}
                         _hover={{ bg: '#0D74FF' }}
-                        icon={<MdFacebook size="28px" />}
+                        icon={<BsTwitter size="28px" />}
                       />
+                      </Link>
+                      <Link href='https://github.com/H-unique245' isExternal>
                       <IconButton
                         aria-label="github"
                         variant="ghost"
@@ -101,14 +103,17 @@ import {
                         _hover={{ bg: '#0D74FF' }}
                         icon={<BsGithub size="28px" />}
                       />
+                      </Link>
+                      <Link href="https://www.linkedin.com/in/hemant-aher-197814b7/" isExternal>
                       <IconButton
-                        aria-label="discord"
+                        aria-label="linkedIn"
                         variant="ghost"
                         size="lg"
                         isRound={true}
                         _hover={{ bg: '#0D74FF' }}
                         icon={<BsLinkedin size="28px" />}
                       />
+                      </Link>
                     </HStack>
                   </Box>
                 </WrapItem>

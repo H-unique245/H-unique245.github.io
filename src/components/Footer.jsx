@@ -50,13 +50,13 @@ import {
           align={{ base: 'center', md: 'center' }}>
           <Text>© 2022 Made by Hemant Aher with ❤️  |  All rights reserved</Text>
           <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Twitter'} href={'#'}>
+            <SocialButton label={'Twitter'} href={'https://twitter.com/AherHemant1'}>
               <FaTwitter />
             </SocialButton>
-            <SocialButton label={'YouTube'} href={'#'}>
+            <SocialButton label={'LinkedIn'} href={'https://www.linkedin.com/in/hemant-aher-197814b7/'}>
               <FaLinkedin />
             </SocialButton>
-            <SocialButton label={'Instagram'} href={'#'}>
+            <SocialButton label={'Github'} href={'https://github.com/H-unique245'}>
               <FaGithub />
             </SocialButton>
           </Stack>
