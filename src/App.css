@@ -1,7 +1,9 @@
 .App {
   text-align: center;
+  font-family: 'Montserrat';
+  background-image: 'url("./background.jpg")';
 }
-
+/* bgImage='./background.jpg' */
 .App-logo {
   height: 40vmin;
   pointer-events: none;

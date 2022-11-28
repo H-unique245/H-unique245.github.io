@@ -67,7 +67,7 @@ export default function Navbar() {
 
   return (
     <>
-      <Box bg={useColorModeValue('purple.400', 'purple.700')} px={4} pos="fixed"  w="100%" zIndex={2}>
+      <Box bgImage='./background.jpg' bgPos={'center'} bgSize='cover' px={4} pos="fixed"  w="100%" zIndex={2}>
         <Flex h={20} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}

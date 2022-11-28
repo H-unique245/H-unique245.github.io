@@ -19,7 +19,7 @@ function App() {
   // const aboutRef = useRef(null)
   return (
     <>
-    <Box >
+    <Box className='App'>
       <Navbar />
       <Home /> 
       <About />

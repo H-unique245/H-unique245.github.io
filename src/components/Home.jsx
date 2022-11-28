@@ -10,7 +10,7 @@ import {
   
   export default function Home({HomeRef}) {
     return (
-        <Stack  ref={HomeRef} bgColor='purple.200'>
+        <Stack  ref={HomeRef} bgImage='./background.jpg' bgPos={'center'} bgSize='cover' >
         {/* <Flex p={5} mt={20} flex={{base:1.5,md:2,lg:2}} align={'center'} justify={'center'}> */}
       <Stack mt={20} direction={{ base: 'column-reverse', md: 'row' }} alignItems="center" p={5} >
           

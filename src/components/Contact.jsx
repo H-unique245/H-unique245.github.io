@@ -30,16 +30,16 @@ import {
     ) {
     return (
       <section id="contact" >
-      <Container bg="purple.800" maxW="full" p={2} centerContent overflow="hidden">
-        <Flex>
+      <Container bg="purple.400" maxW="100%" p={2} centerContent overflow="hidden">
+        <Flex >
           <Box
-            bg="#02054B"
+            bg="purple.700"
             color="white"
             borderRadius="lg"
-            m={{ sm: 4, md: 16, lg: 10 }}
-            p={{ sm: 5, md: 5, lg: 16 }}>
+            m={{ sm: 4, md: 16, lg: 6 }}
+            p={{ sm: 5, md: 5, lg: 8 }}>
             <Box p={4}>
-              <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
+              <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 40 }}>
                 <WrapItem>
                   <Box>
                     <Heading>Contact</Heading>
@@ -128,7 +128,7 @@ import {
                               pointerEvents="none"
                               children={<BsPerson color="gray.800" />}
                             />
-                            <Input type="text" size="md" />
+                            <Input type="text" size={"lg"} />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
@@ -138,7 +138,7 @@ import {
                               pointerEvents="none"
                               children={<MdOutlineEmail color="gray.800" />}
                             />
-                            <Input type="text" size="md" />
+                            <Input type="text" size="lg" />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
