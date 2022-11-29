@@ -18,8 +18,8 @@ function App() {
   // const contactRef = useRef(null)
   // const aboutRef = useRef(null)
   return (
-    <>
     <Box className='App'>
+      <Box bgImage='./background.jpg' bgPos={'center'} bgSize='cover'>
       <Navbar />
       <Home /> 
       <About />
@@ -32,7 +32,7 @@ function App() {
       <Footer />
      </Box> 
      
-      </>
+      </Box>
   );
 }
 

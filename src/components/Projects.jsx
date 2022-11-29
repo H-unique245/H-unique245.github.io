@@ -57,8 +57,8 @@ export default function Project() {
             image: "./shopbop.png",
             tech: ["HTML" ,"CSS", "JavaScript"],
             project:"Individual Project",
-            deploylink:"https://capable-gecko-6d7ee1.netlify.app/",
-            githublink:'https://github.com/shubham0709/firefox'
+            deploylink:"https://beautiful-cendol-f856f5.netlify.app/",
+            githublink:'https://github.com/H-unique245/Shopbp'
         },
         {
             name:"Kindmeal clone",
@@ -66,23 +66,23 @@ export default function Project() {
             image: "./kindmeal.png",
             tech: ["JavaScript", "React", "Chakra UI" ],
             project:"Individual Project",
-            deploylink:"https://capable-gecko-6d7ee1.netlify.app/",
-            githublink:'https://github.com/shubham0709/firefox'
+            deploylink:"https://timely-crepe-c8bf70.netlify.app/",
+            githublink:'https://github.com/H-unique245/Kindmeal-clone'
         },
         {
-          name:"Kindmeal clone",
-          description:"Construct Week project of cloning Kindmeal.my. This project is build by tech stacks using React, javascript, HTML, CSS, Chakra UI, etc. ",
-          image: "./kindmeal.png",
-          tech: ["JavaScript", "React", "Chakra UI" ],
-          project:"Individual Project",
-          deploylink:"https://capable-gecko-6d7ee1.netlify.app/",
-          githublink:'https://github.com/shubham0709/firefox'
+          name:"KFC clone",
+          description:"Construct Week project of cloning KFC. This project is build by tech stacks using React, javascript, HTML, CSS, Chakra UI,Mogno DB, Node JS etc. ",
+          image: "./KFC.jpg",
+          tech: ["JavaScript", "React", "Chakra UI", "NodeJS", 'Exprees JS' ],
+          project:"Group Project",
+          deploylink:"https://axiomatic-trouble-8860-38bfe.web.app/",
+          githublink:'https://github.com/H-unique245/axiomatic-trouble-8860'
       }
     ]
     return (
       <section id="projects">
 
-      <Box p={3} align="center" bgColor='purple.300' >
+      <Box p={3} align="center"  >
         
         <Heading align="center" > Projects</Heading>
         <Slider {...settings}>

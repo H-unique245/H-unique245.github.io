@@ -43,7 +43,7 @@ function Skills() {
     },
   ];
   return (
-    <VStack
+    <VStack id="skills"
       p={5}
       bgColor="purple.100"
       textAlign={"center"}

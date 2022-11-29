@@ -4,7 +4,7 @@ import React from "react";
 function About() {
   return (
     <section id="about">
-    <Box bgImage='./background.jpg' bgPos={'center'} bgSize='cover' p={4} >
+    <Box  p={4} >
       <Heading align="center">About me</Heading>
       <Stack direction={{ base: 'column', md: 'row' }}spacing={4} alignItems="center" p={{base:7,md:19}} >
     <Box>  <Image

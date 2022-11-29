@@ -12,7 +12,6 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
-// const Links = ['Home','About','Skills', 'Projects', 'Contact', 'Resume'];
 
 const Links = [
   {
