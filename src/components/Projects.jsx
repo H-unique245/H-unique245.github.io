@@ -43,15 +43,6 @@ export default function Project() {
   };
     const projects= [
         {
-            name:"Firefox-bikes clone",
-            description:"Online platform to retail bicycles of firefox bikes, it is an ecommerce platform for bicycle lovers and explorers",
-            image: `https://i.ibb.co/1qp2fyn/firefox.png`,
-            tech: ["HTML" ,"CSS", "JavaScript"],
-            project:"Group Project",
-            deploylink:"https://capable-gecko-6d7ee1.netlify.app/",
-            githublink:'https://github.com/shubham0709/firefox'
-        },
-        {
             name:"Shopbop clone",
             description:"Shopbop is the global retail application, basically it is an e-commerce website. In this project the tech stacks used are HTML, CSS, JavaScript.",
             image: "./shopbop.png",
@@ -77,14 +68,23 @@ export default function Project() {
           project:"Group Project",
           deploylink:"https://axiomatic-trouble-8860-38bfe.web.app/",
           githublink:'https://github.com/H-unique245/axiomatic-trouble-8860'
-      }
+      },
+      {
+        name:"Cronometer clone",
+        description:"Cronometer nutrition tracking app provides you with everything you need to reach your health goals. It is a food journal that you keep daily.",
+        image: `./cronometer.png`,
+        tech: ["JavaScript", "React", "Chakra UI", "NodeJS", 'Exprees JS',"Mongo DB" ],
+        project:"Group Project",
+        deploylink:"https://fitfinity.vercel.app/",
+        githublink:'https://github.com/furqan5921/evasive-stew-6265'
+    }
     ]
     return (
       <section id="projects">
 
-      <Box p={3} align="center"  >
+      <Box p={3} align="center" bgColor='#e5eaf5'  >
         
-        <Heading align="center" > Projects</Heading>
+        <Heading align="center" w='40%' boxShadow={'md'} borderRadius='1vh' m={'auto'}  color='#12343b' > Projects</Heading>
         <Slider {...settings}>
             {
                 projects.map((el)=>

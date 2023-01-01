@@ -12,6 +12,9 @@ import {
   Flex,
 } from "@chakra-ui/react";
 // import {Link,useNavigate} from "react-router-dom";
+import {BsGithub} from "react-icons/bs";
+import {GrDeploy} from "react-icons/gr";
+
 
 export default function ProjectCard({
   name,
@@ -29,7 +32,7 @@ export default function ProjectCard({
         minH={"580px"}
         // maxH={"650px"}
         w={"full"}
-        bg={useColorModeValue("white", "gray.900")}
+        bg={useColorModeValue("#e5eaf5", "gray.900")}
         boxShadow={"2xl"}
         rounded={"5%"}
         p={6}
@@ -52,9 +55,9 @@ export default function ProjectCard({
         </Text>
         <Text
           textAlign={"center"}
-          color={useColorModeValue("gray.700", "gray.400")}
+          color='black'
           h={"6rem"}
-          fontSize="sm"
+          fontSize="md"
           maxH={'7rem'}
           px={2}
         >
@@ -63,7 +66,7 @@ export default function ProjectCard({
 
         <Flex flexWrap={'wrap'} gap={2} minH={'60px'} justifyContent='center' alignItems={'center'} mt={6}>
           {tech?.map((el) => (
-            <Badge key={el} px={2} py={1} bg="purple.200" fontWeight={"400"}>
+            <Badge key={el} px={2} py={1} borderRadius='7px'  variant={'solid'} color="white" fontWeight={"400"}>
               {el}
             </Badge>
           ))}
@@ -74,7 +77,9 @@ export default function ProjectCard({
           <Button
             flex={1}
             fontSize={"sm"}
+            bg={"#e5eaf5"}
             rounded={"full"}
+            leftIcon={<GrDeploy />}
             _focus={{
               bg: "gray.200",
             }}
@@ -87,14 +92,17 @@ export default function ProjectCard({
             flex={1}
             fontSize={"sm"}
             rounded={"full"}
-            bg={"blue.400"}
+            bg={"#12343b"}
             color={"white"}
             boxShadow={"xl"}
+            leftIcon={<BsGithub />}
             _hover={{
-              bg: "blue.500",
+              bg: "#e5eaf5",
+              color:"black"
             }}
             _focus={{
-              bg: "blue.500",
+              bg: "#e5eaf5",
+              
             }}
           >
             Source

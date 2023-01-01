@@ -4,8 +4,8 @@ import React from "react";
 function About() {
   return (
     <section id="about">
-    <Box  p={4} >
-      <Heading align="center">About me</Heading>
+    <Box  p={4} bgColor='#e5eaf5'>
+      <Heading align="center" w='40%' boxShadow={'md'} borderRadius='1vh' m={'auto'}  color='#12343b' >About me</Heading>
       <Stack direction={{ base: 'column', md: 'row' }}spacing={4} alignItems="center" p={{base:7,md:19}} >
     <Box>  <Image
             w={{base:"9rem",md:"46rem"}}

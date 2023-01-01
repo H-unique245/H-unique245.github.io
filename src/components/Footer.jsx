@@ -36,7 +36,7 @@ import {
   export default function Footer() {
     return (
       <Box
-        // bg={useColorModeValue('purple.400', 'purple.900')}
+      bgColor='#e5eaf5'
         borderTop= {'1px solid'}
         // mt={2}
         color={useColorModeValue('black.400', 'black.900')}>

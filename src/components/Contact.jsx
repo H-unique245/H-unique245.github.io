@@ -30,19 +30,22 @@ import {
     ) {
     return (
       <section id="contact" >
-      <Container bg="purple.400" maxW="100%" p={2} centerContent overflow="hidden">
+      <Container bgColor='#e5eaf5' maxW="100%" p={1} centerContent overflow="hidden">
+        <Heading align="center" w='40%' boxShadow={'md'} borderRadius='1vh' m={'auto'}  color='#12343b'>Contact</Heading>
         <Flex >
+
           <Box
-            bg="purple.700"
+            bg="#12334b"
             color="white"
+            // m='auto'
             borderRadius="lg"
-            m={{ sm: 4, md: 16, lg: 6 }}
-            p={{ sm: 5, md: 5, lg: 8 }}>
-            <Box p={4}>
+            m={{ sm: 4, md: 16, lg: 10 }}
+            p={{ sm: 5, md: 5, lg: 16 }}
+            >
+            <Box p={6}>
               <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 40 }}>
                 <WrapItem>
                   <Box>
-                    <Heading>Contact</Heading>
                     <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
                       Fill up the form below to contact
                     </Text>
@@ -54,8 +57,8 @@ import {
                           width="250px"
                           variant="ghost"
                           color="#DCE2FF"
-                          _hover={{ border: '2px solid #1C6FEB' }}
-                          leftIcon={<MdPhone color="#1970F1" size="20px" />}>
+                          _hover={{ border: '2px solid purple.500' }}
+                          leftIcon={<MdPhone color="purple.500" size="20px" />}>
                           +91-86000 85196
                         </Button>
                         <Button
@@ -64,8 +67,8 @@ import {
                           width="250px"
                           variant="ghost"
                           color="#DCE2FF"
-                          _hover={{ border: '2px solid #1C6FEB' }}
-                          leftIcon={<MdEmail color="#1970F1" size="20px" />}>
+                          _hover={{ border: '2px solid purple.500' }}
+                          leftIcon={<MdEmail color="purple.500" size="20px" />}>
                           a.hemant96@gmail.com
                         </Button>
                         <Button
@@ -74,8 +77,8 @@ import {
                           width="250px"
                           variant="ghost"
                           color="#DCE2FF"
-                          _hover={{ border: '2px solid #1C6FEB' }}
-                          leftIcon={<MdLocationOn color="#1970F1" size="20px" />}>
+                          _hover={{ border: '2px solid purple.500' }}
+                          leftIcon={<MdLocationOn color="purple.500" size="20px" />}>
                           Nashik, Maharashtra (India)
                         </Button>
                       </VStack>
@@ -90,7 +93,7 @@ import {
                         variant="ghost"
                         size="lg"
                         isRound={true}
-                        _hover={{ bg: '#0D74FF' }}
+                        _hover={{ bg: '#12334b' }}
                         icon={<BsTwitter size="28px" />}
                       />
                       </Link>
@@ -100,7 +103,7 @@ import {
                         variant="ghost"
                         size="lg"
                         isRound={true}
-                        _hover={{ bg: '#0D74FF' }}
+                        _hover={{ bg: '#12334b' }}
                         icon={<BsGithub size="28px" />}
                       />
                       </Link>
@@ -110,7 +113,7 @@ import {
                         variant="ghost"
                         size="lg"
                         isRound={true}
-                        _hover={{ bg: '#0D74FF' }}
+                        _hover={{ bg: '#12334b' }}
                         icon={<BsLinkedin size="28px" />}
                       />
                       </Link>
@@ -118,9 +121,9 @@ import {
                   </Box>
                 </WrapItem>
                 <WrapItem>
-                  <Box bg="white" borderRadius="lg">
+                  <Box bg="#e5eaf5" borderRadius="lg" >
                     <Box m={8} color="#0B0E3F">
-                      <VStack spacing={5}>
+                      <VStack spacing={5} w="100%" >
                         <FormControl id="name">
                           <FormLabel>Your Name</FormLabel>
                           <InputGroup borderColor="#E0E1E7">
@@ -154,7 +157,7 @@ import {
                         <FormControl id="name" float="right">
                           <Button
                             variant="solid"
-                            bg="#0D74FF"
+                            bg="#12334b"
                             color="white"
                             _hover={{}}>
                             Send Message

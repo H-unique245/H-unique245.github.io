@@ -1,4 +1,4 @@
-import { Box, Heading, SimpleGrid, VStack } from "@chakra-ui/react";
+import {  Heading, SimpleGrid, VStack } from "@chakra-ui/react";
 import React from "react";
 import { SkillCard } from "./SkillCard";
 
@@ -45,15 +45,13 @@ function Skills() {
   return (
     <VStack id="skills"
       p={5}
-      bgColor="purple.100"
+      bgColor='#e5eaf5'
       textAlign={"center"}
       fontFamily="Montserrat"
     >
-      <Box alignItems="center">
-        <Heading alignSelf={'center'}>Skills </Heading>
-      </Box>
-
-      <SimpleGrid columns={[2, 3, 5]} spacing="40px">
+        <Heading align="center" w='40%' boxShadow={'md'} borderRadius='1vh' m={'auto'}  color='#12343b'>Skills </Heading>
+{/*  */}
+      <SimpleGrid columns={{base:2,sm:2,md:4,lg:6}} spacing="40px">
         {skills.map((el) => {
           return <SkillCard key={el.title} image={el.image} title={el.title} />;
         })}
