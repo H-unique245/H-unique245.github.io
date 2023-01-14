@@ -1,8 +1,13 @@
 .App {
   text-align: center;
   font-family: 'Montserrat';
+  margin: auto;
   background-image: 'url("./background.jpg")';
 }
+.slider-arrow {
+display: none;
+}
+
 /* bgImage='./background.jpg' */
 .App-logo {
   height: 40vmin;

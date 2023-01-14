@@ -39,6 +39,7 @@ import {
       bgColor='#e5eaf5'
         borderTop= {'1px solid'}
         // mt={2}
+        m="auto"
         color={useColorModeValue('black.400', 'black.900')}>
         <Container
           as={Stack}

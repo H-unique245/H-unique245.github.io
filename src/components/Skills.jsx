@@ -49,7 +49,7 @@ function Skills() {
       textAlign={"center"}
       fontFamily="Montserrat"
     >
-        <Heading align="center" w='40%' boxShadow={'md'} borderRadius='1vh' m={'auto'}  color='#12343b'>Skills </Heading>
+        <Heading align="center" w='40%' fontSize={{base:'24px',sm:'28px',md:'36px'}} boxShadow={'md'} borderRadius='1vh' m={'auto'}  color='#12343b'>Skills </Heading>
 {/*  */}
       <SimpleGrid columns={{base:2,sm:2,md:4,lg:6}} spacing="40px">
         {skills.map((el) => {

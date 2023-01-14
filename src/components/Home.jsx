@@ -67,7 +67,7 @@ import {
           </Stack>
           {/* <Spacer></Spacer> */}
           <Box>
-        <Image w='full' rounded='50%' src="./profile.jpg" alt="about"/>
+        <Image w={{base:"60%",sm:"60%",md:"80%",lg:'full'}} m={'auto'} rounded='50%' p={2} src="./profile.jpg" alt="about"/>
           </Box>
           </Stack>
 

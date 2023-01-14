@@ -5,7 +5,7 @@ function About() {
   return (
     <section id="about">
     <Box  p={4} bgColor='#e5eaf5'>
-      <Heading align="center" w='40%' boxShadow={'md'} borderRadius='1vh' m={'auto'}  color='#12343b' >About me</Heading>
+      <Heading align="center" w='40%' boxShadow={'md'} fontSize={{base:'24px',sm:'28px',md:'36px'}} borderRadius='1vh' m={'auto'}  color='#12343b' >About me</Heading>
       <Stack direction={{ base: 'column', md: 'row' }}spacing={4} alignItems="center" p={{base:7,md:19}} >
     <Box>  <Image
             w={{base:"9rem",md:"46rem"}}
@@ -18,7 +18,7 @@ function About() {
             }
           />
           </Box>
-     <Box alignItems="center" textAlign={'justify'}  m={{base:1,md:'auto'}} > <Text  w={{base:"95%",md:"90%"}} m='auto' lineHeight={1.3} fontSize={{ base: 'md',md:"lg", lg: '2xl' }} color={'black.500'}>
+     <Box alignItems="center" textAlign={'justify'}  m={{base:1,md:'auto'}} > <Text  w={{base:"95%",md:"90%"}} m='auto' fontSize={{ base: 'md',md:"lg", lg: 'xl' }} fontWeight={400} lineHeight={'1.7'} color={'black.500'}>
         I am Hemant Balu Aher from Nashik, Maharashtra(INDIA). I completed my B.E.
         Mechanical from Pune University in 2021. I am pursuing Full Stack Web
         Development (FSWD) at Masai School. My father is a worker and my mother

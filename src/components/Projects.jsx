@@ -3,6 +3,27 @@ import React from "react";
 import Slider from "react-slick";
 import ProjectCard from "./ProjectCard";
 
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "none", background: "red" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "none", background: "green" }}
+      onClick={onClick}
+    />
+  );
+}
 
 // export default class Project extends Component {
 //     render() {
@@ -10,13 +31,15 @@ export default function Project() {
   var settings = {
     dots: true,
     infinite: false,
-    speed: 500,
+    speed: 500,  
     slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 0,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1271,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -25,7 +48,7 @@ export default function Project() {
         }
       },
       {
-        breakpoint: 800,
+        breakpoint: 860,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -33,7 +56,7 @@ export default function Project() {
         }
       },
       {
-        breakpoint: 550,
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -44,7 +67,7 @@ export default function Project() {
     const projects= [
         {
             name:"Shopbop clone",
-            description:"Shopbop is the global retail application, basically it is an e-commerce website. In this project the tech stacks used are HTML, CSS, JavaScript.",
+            description:"It is an e-commerce shopping application where we can buy clothes & other essentials with different categories.",
             image: "./shopbop.png",
             tech: ["HTML" ,"CSS", "JavaScript"],
             project:"Individual Project",
@@ -53,7 +76,7 @@ export default function Project() {
         },
         {
             name:"Kindmeal clone",
-            description:"Construct Week project of cloning Kindmeal.my. This project is build by tech stacks using React, javascript, HTML, CSS, Chakra UI, etc. ",
+            description:"Kindemeal is a Malaysian product base platform, where we can check the food products & restaurants for the same.",
             image: "./kindmeal.png",
             tech: ["JavaScript", "React", "Chakra UI" ],
             project:"Individual Project",
@@ -62,18 +85,18 @@ export default function Project() {
         },
         {
           name:"KFC clone",
-          description:"Construct Week project of cloning KFC. This project is build by tech stacks using React, javascript, HTML, CSS, Chakra UI,Mogno DB, Node JS etc. ",
+          description:"KFC is an American fast-food restaurant application that specializes in fried chicken",
           image: "./KFC.jpg",
-          tech: ["JavaScript", "React", "Chakra UI", "NodeJS", 'Exprees JS' ],
+          tech: ["JavaScript", "React", "NodeJS", "Chakra UI", 'Express JS' ],
           project:"Group Project",
           deploylink:"https://axiomatic-trouble-8860-38bfe.web.app/",
           githublink:'https://github.com/H-unique245/axiomatic-trouble-8860'
       },
       {
-        name:"Cronometer clone",
-        description:"Cronometer nutrition tracking app provides you with everything you need to reach your health goals. It is a food journal that you keep daily.",
+        name:"Fitfinity",
+        description:"Cronometer nutrition tracking app provides you with everything you need to reach your health goals.",
         image: `./cronometer.png`,
-        tech: ["JavaScript", "React", "Chakra UI", "NodeJS", 'Exprees JS',"Mongo DB" ],
+        tech: ["JavaScript", "React", "NodeJS","Mongo DB", 'Express JS' ],
         project:"Group Project",
         deploylink:"https://fitfinity.vercel.app/",
         githublink:'https://github.com/furqan5921/evasive-stew-6265'
@@ -84,7 +107,7 @@ export default function Project() {
 
       <Box p={3} align="center" bgColor='#e5eaf5'  >
         
-        <Heading align="center" w='40%' boxShadow={'md'} borderRadius='1vh' m={'auto'}  color='#12343b' > Projects</Heading>
+        <Heading align="center" w='40%' boxShadow={'md'} fontSize={{base:'24px',sm:'28px',md:'36px'}} borderRadius='1vh'  color='#12343b' > Projects</Heading>
         <Slider {...settings}>
             {
                 projects.map((el)=>

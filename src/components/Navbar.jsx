@@ -87,7 +87,7 @@ export default function Navbar() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={10} alignItems={'center'}>
-            <Box rounded={'full'} p={2} ><Image w={{base:'3vh',md:'2.5vh',lg:'4vh'}} src='https://3.files.edl.io/bb16/22/02/18/154713-de5b1c4e-3d3f-44e0-95dc-bcb7627d37dc.png' slt='logo' /></Box>
+            <Box rounded={'full'} p={2} ><Image w={{base:'30px',md:'20px',lg:'40px'}} src='https://3.files.edl.io/bb16/22/02/18/154713-de5b1c4e-3d3f-44e0-95dc-bcb7627d37dc.png' slt='logo' /></Box>
             <HStack
               as={'nav'}
               spacing={4}

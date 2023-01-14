@@ -31,7 +31,7 @@ import {
     return (
       <section id="contact" >
       <Container bgColor='#e5eaf5' maxW="100%" p={1} centerContent overflow="hidden">
-        <Heading align="center" w='40%' boxShadow={'md'} borderRadius='1vh' m={'auto'}  color='#12343b'>Contact</Heading>
+        <Heading align="center" w='40%' boxShadow={'md'} borderRadius='1vh' m={'auto'} fontSize={{base:'24px',sm:'28px',md:'36px'}}  color='#12343b'>Contact</Heading>
         <Flex >
 
           <Box

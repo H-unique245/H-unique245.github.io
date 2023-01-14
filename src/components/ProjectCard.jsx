@@ -29,14 +29,15 @@ export default function ProjectCard({
     <Center py={6} px={3}>
       <Box
         maxW={"350px"}
-        minH={"580px"}
-        // maxH={"650px"}
         w={"full"}
+        h={{base:'580px',md:'635px',lg:'60%'}}
+        // border="2px solid yellow"
         bg={useColorModeValue("#e5eaf5", "gray.900")}
         boxShadow={"2xl"}
         rounded={"5%"}
         p={6}
         textAlign={"center"}
+        m='auto'
       >
         <Image
           fit={"cover"}
@@ -56,30 +57,33 @@ export default function ProjectCard({
         <Text
           textAlign={"center"}
           color='black'
-          h={"6rem"}
-          fontSize="md"
-          maxH={'7rem'}
+          h={{base:"32%",md:"37%",lg:"34.5%"}}
+          // border="1px solid green"
+          fontSize={{ base: 'md',md:"lg", lg: 'xl' }}
+          // fontSize={{base:"12px",sm:"15px",md:"17px",lg:"16px"}}
+          // maxH={'7rem'}
           px={2}
         >
           {description}
         </Text>
-
-        <Flex flexWrap={'wrap'} gap={2} minH={'60px'} justifyContent='center' alignItems={'center'} mt={6}>
+        <Box  h={{base:"15%",md:"20%",lg:"20%"}}m='auto'>
+            <Flex flexWrap={'wrap'}  gap={2} h={{base:"40%",md:"40%",lg:"50%"}} /*border="1px solid red"*/ fontSize={{ base: 'sm',md:"md", lg: 'lg' }} justifyContent='center' alignItems={'center'} m='auto' mt={4} >
           {tech?.map((el) => (
-            <Badge key={el} px={2} py={1} borderRadius='7px'  variant={'solid'} color="white" fontWeight={"400"}>
+            <Badge key={el} p={1} borderRadius='7px'   /*border="1px solid blue"*/ variant={'solid'} color="white" fontWeight={"400"}>
               {el}
             </Badge>
           ))}
         </Flex>
-
-        <Stack mt={8} justifyContent={'center'} alignItems={'center'} direction={"row"} spacing={4}>
+        <Stack h={{base:"40%",md:"40%",lg:"50%"}} m='auto' mt={10}  justifyContent={'center'} alignItems={'center'} direction={"row"} spacing={4}>
         <Link href = {deploylink } isExternal >
           <Button
             flex={1}
             fontSize={"sm"}
             bg={"#e5eaf5"}
+            border="1px solid"
             rounded={"full"}
             leftIcon={<GrDeploy />}
+            m='auto'
             _focus={{
               bg: "gray.200",
             }}
@@ -100,6 +104,7 @@ export default function ProjectCard({
               bg: "#e5eaf5",
               color:"black"
             }}
+            m='auto'
             _focus={{
               bg: "#e5eaf5",
               
@@ -109,6 +114,7 @@ export default function ProjectCard({
           </Button>
           </Link>
         </Stack>
+        </Box>
       </Box>
     </Center>
   );
