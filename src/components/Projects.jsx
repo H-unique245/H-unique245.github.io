@@ -1,7 +1,8 @@
 import { Box, Heading } from "@chakra-ui/react";
 import React from "react";
 import Slider from "react-slick";
-import ProjectCard from "./ProjectCard";
+// import ProjectCard from "./ProjectCard";
+import ProjectCard2 from "./ProjectCard2";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -39,7 +40,7 @@ export default function Project() {
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
-        breakpoint: 1271,
+        breakpoint: 1440,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -55,8 +56,15 @@ export default function Project() {
           initialSlide: 2
         }
       },
+      // {
+      //   breakpoint: 640,
+      //   settings: {
+      //     slidesToShow: 2,
+      //     slidesToScroll: 2
+      //   }
+      // },
       {
-        breakpoint: 640,
+        breakpoint: 576,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -87,7 +95,7 @@ export default function Project() {
           name:"KFC clone",
           description:"KFC is an American fast-food restaurant application that specializes in fried chicken",
           image: "./KFC.jpg",
-          tech: ["JavaScript", "React", "NodeJS", "Chakra UI", 'Express JS' ],
+          tech: ["JavaScript", "React JS", "NodeJS", "Chakra UI", 'Express JS' ],
           project:"Group Project",
           deploylink:"https://axiomatic-trouble-8860-38bfe.web.app/",
           githublink:'https://github.com/H-unique245/axiomatic-trouble-8860'
@@ -96,7 +104,7 @@ export default function Project() {
         name:"Fitfinity",
         description:"Cronometer nutrition tracking app provides you with everything you need to reach your health goals.",
         image: `./cronometer.png`,
-        tech: ["JavaScript", "React", "NodeJS","Mongo DB", 'Express JS' ],
+        tech: ["JavaScript", "React JS", "Node JS","Mongo DB", 'Express JS' ],
         project:"Group Project",
         deploylink:"https://fitfinity.vercel.app/",
         githublink:'https://github.com/furqan5921/evasive-stew-6265'
@@ -105,15 +113,15 @@ export default function Project() {
     return (
       <section id="projects">
 
-      <Box p={3} align="center" bgColor='#e5eaf5'  >
+      <Box align="center" bgColor='#e5eaf5'  >
         
-        <Heading align="center" w='40%' boxShadow={'md'} fontSize={{base:'24px',sm:'28px',md:'36px'}} borderRadius='1vh'  color='#12343b' > Projects</Heading>
+        <Heading align="center" w='40%' boxShadow={'md'} fontSize={{base:'24px',sm:'28px',md:'36px'}} borderRadius='1vh'  color='#12343b' p={1} > Projects</Heading>
         <Slider {...settings}>
             {
                 projects.map((el)=>
                 <div key={el.name}>
-                <ProjectCard {...el} />
-                </div>
+                <ProjectCard2 key={el.name} {...el} />
+               </div>
                 )
             }
         </Slider>

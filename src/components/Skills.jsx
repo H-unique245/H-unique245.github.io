@@ -51,7 +51,7 @@ function Skills() {
     >
         <Heading align="center" w='40%' fontSize={{base:'24px',sm:'28px',md:'36px'}} boxShadow={'md'} borderRadius='1vh' m={'auto'}  color='#12343b'>Skills </Heading>
 {/*  */}
-      <SimpleGrid columns={{base:2,sm:2,md:4,lg:6}} spacing="40px">
+      <SimpleGrid columns={[2,3,4,5]} spacing={[1,1,2,2]}>
         {skills.map((el) => {
           return <SkillCard key={el.title} image={el.image} title={el.title} />;
         })}

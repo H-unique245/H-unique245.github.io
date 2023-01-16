@@ -1,5 +1,5 @@
 import { Box, Container, Heading,  Stack } from '@chakra-ui/react'
-import ReactTooltip from "react-tooltip";
+// import {Tooltip} from "react-tooltip";
 import GitHubCalendar from "react-github-calendar";
 import "./GitCalender.css";
 function GitCalender() {
@@ -31,7 +31,7 @@ function GitCalender() {
     // hideColorLegend={{base:false,sm:true, md:false}}
     theme={colorTheme}
   >
-    <ReactTooltip delayShow={20} html />
+    {/* <Tooltip delayShow={20} html /> */}
   </GitHubCalendar>
   </Stack>
   </Container>

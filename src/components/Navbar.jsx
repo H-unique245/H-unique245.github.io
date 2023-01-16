@@ -93,7 +93,7 @@ export default function Navbar() {
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
               {Links.map((link) => (
-                <NavLink key={link.title} to={link}>{link}</NavLink>
+                <NavLink key={link.title} to={link} onClick={isOpen ? onClose : onOpen}>{link}</NavLink>
               ))}
               <Button onClick={onButtonClick} fontFamily='Montserrat'
     fontWeight='medium'  _hover={{
