@@ -26,6 +26,10 @@ function Skills() {
       image: "/redux.svg",
     },
     {
+      title: "CHAKRA UI",
+      image: "/chakraui.svg",
+    },
+    {
       title: "Git Hub",
       image: "/github.svg",
     },
@@ -41,17 +45,25 @@ function Skills() {
       title: "Express JS",
       image: "/express.svg",
     },
+    {
+      title: "Next JS",
+      image: "/nextjs.svg",
+    },
+    {
+      title: "Typescript",
+      image: "/typescript.svg",
+    }
   ];
   return (
     <VStack id="skills"
-      p={5}
+      p={4}
       bgColor='#e5eaf5'
       textAlign={"center"}
       fontFamily="Montserrat"
     >
         <Heading align="center" w='40%' fontSize={{base:'24px',sm:'28px',md:'36px'}} boxShadow={'md'} borderRadius='1vh' m={'auto'}  color='#12343b'>Skills </Heading>
 {/*  */}
-      <SimpleGrid columns={[2,3,4,5]} spacing={[1,1,2,2]}>
+      <SimpleGrid columns={[2,3,4,6]} spacing={[1,1,2,2]}>
         {skills.map((el) => {
           return <SkillCard key={el.title} image={el.image} title={el.title} />;
         })}

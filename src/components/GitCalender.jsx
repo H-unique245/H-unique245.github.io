@@ -14,7 +14,7 @@ function GitCalender() {
   };
   return (
     <Box  p={10}   alignItems="center" bgColor='#e5eaf5'>
-  <Container  maxW={{base:'container.sm',sm:'container.lg',md:'container.md',lg:'container.lg'}} p={5}  centerContent >
+  <Container  maxW={{base:'container.sm',sm:'container.lg',md:'container.md',lg:'container.lg'}} p={1}  centerContent >
     <Heading align="center" w={{base:'80%',md:'40%'}} boxShadow={'md'} fontSize={{base:'24px',sm:'28px',md:'36px'}} borderRadius='1vh' m={'auto'}  color='#12343b' >Git Hub Stats</Heading>
     <Stack direction={['column', 'row']} m={4} spacing={{base:4,md:8}}>
      <p align="left" ><img align="center" src="https://github-readme-stats.vercel.app/api?username=h-unique245&theme=prussian&show_icons=true&locale=en" alt="h-unique245" /></p>
