@@ -52,6 +52,14 @@ function Skills() {
     {
       title: "Typescript",
       image: "/typescript.svg",
+    },
+    {
+      title: "NPM",
+      image: "/npm.svg",
+    },
+    {
+      title: "Postman",
+      image: "/postman.svg",
     }
   ];
   return (
@@ -61,7 +69,7 @@ function Skills() {
       textAlign={"center"}
       fontFamily="Montserrat"
     >
-        <Heading align="center" w='40%' fontSize={{base:'24px',sm:'28px',md:'36px'}} boxShadow={'md'} borderRadius='1vh' m={'auto'}  color='#12343b'>Skills </Heading>
+        <Heading align="center" w='35%' fontSize={{base:'24px',sm:'28px',md:'36px'}} boxShadow={'md'} borderRadius='1vh' m={'auto'} p={2} color='#12343b'>Skills </Heading>
 {/*  */}
       <SimpleGrid columns={[2,3,4,6]} spacing={[1,1,2,2]}>
         {skills.map((el) => {
