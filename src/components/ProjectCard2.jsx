@@ -34,6 +34,12 @@ function ProjectCard2({
         textAlign={"center"}
         boxShadow={"2xl"}
         rounded={"5%"}
+        transition="0.3s ease-in-out"
+        _hover={{
+          transform: "scale(1.03)",
+          bgColor: "blackAlpha.50",
+          border:"1px solid",
+                }}
       >
         <CardBody
         // minH={'280px'}
